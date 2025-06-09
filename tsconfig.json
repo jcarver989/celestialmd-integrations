@@ -1,0 +1,7 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/celestial-astro" },
+    { "path": "packages/celestial-astro-integration-tests" }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@celestialmd/astro-integration-tests",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "test:run": "vitest run",
+    "dev": "astro dev",
+    "build": "astro build",
+    "clean": "rm -rf dist && rm -rf celestial"
+  },
+  "dependencies": {
+    "@celestialmd/astro": "file:../celestial-astro",
+    "astro": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "@vitest/ui": "^1.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
