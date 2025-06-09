@@ -1,6 +1,6 @@
 {
   "name": "@celestialmd/astro",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Celestial MD integration for Astro",
   "type": "module",
   "main": "./dist/index.js",
@@ -20,7 +20,9 @@
     "clean": "rm -rf dist",
     "test": "vitest",
     "test:run": "vitest run",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "prerelease": "npx tsc -b",
+    "release": "npm publish --access public"
   },
   "peerDependencies": {
     "astro": "^5.0.0"
