@@ -22,8 +22,10 @@ export interface Props {
   props?: Record<string, any>;
 }
 
+const celestialDir = "./.celestial";
+
 // Path to the generated template file (in celestial directory since it's ephemeral)
-const templatePath = "./celestial/template.astro";
+const templatePath = `${celestialDir}/template.astro`;
 
 // Route that serves up the generated template file
 const templateRoute = "/dev/celestial/template";
@@ -51,7 +53,7 @@ export default function celestial({
           props
         );
 
-        mkdirSync("./celestial", { recursive: true });
+        mkdirSync(celestialDir, { recursive: true });
         writeFileSync(templatePath, template, {
           encoding: "utf-8",
         });
@@ -69,8 +71,8 @@ export default function celestial({
           );
           if (response.ok) {
             const html = await response.text();
-            mkdirSync("./celestial", { recursive: true });
-            writeFileSync("./celestial/template.html", html, {
+            mkdirSync(celestialDir, { recursive: true });
+            writeFileSync(`${celestialDir}/template.html`, html, {
               encoding: "utf-8",
             });
           } else {

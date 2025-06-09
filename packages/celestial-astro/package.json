@@ -1,6 +1,6 @@
 {
   "name": "@celestialmd/astro",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Celestial MD integration for Astro",
   "type": "module",
   "main": "./dist/index.js",
@@ -15,21 +15,20 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc --build",
+    "build": "tsc",
     "dev": "tsc --watch",
     "clean": "rm -rf dist",
     "test": "vitest",
     "test:run": "vitest run",
-    "test:ui": "vitest --ui",
-    "prebuild": "npm run clean"
+    "test:ui": "vitest --ui"
   },
   "peerDependencies": {
-    "astro": "^4.0.0"
+    "astro": "^5.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.15.30",
     "@vitest/ui": "^1.0.0",
-    "astro": "^4.0.0",
+    "astro": "^5.0.0",
     "typescript": "^5.0.0",
     "vitest": "^1.0.0"
   },

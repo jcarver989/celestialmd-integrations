@@ -6,7 +6,7 @@ import { resolve, join } from "path";
 describe("Celestial Integration E2E Tests", () => {
   let devServer: ChildProcess | null = null;
   const packageDir = resolve(import.meta.dirname, "..");
-  const celestialDir = join(packageDir, "celestial");
+  const celestialDir = join(packageDir, ".celestial");
   const templateHtmlPath = join(celestialDir, "template.html");
 
   beforeEach(() => {
