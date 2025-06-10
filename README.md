@@ -106,7 +106,7 @@ To complete the setup, create a configuration file at `.celestial/settings.json`
 
 Celestial will automatically load this configuration when you open your project directory.
 
-For more detailed configuration options, see the [official documentation](https://celestialmd.com/docs).
+For more detailed configuration options, see the [official documentation](https://celestialmd.com/docs/settings).
 
 #### How It Works
 
